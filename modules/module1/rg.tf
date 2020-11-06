@@ -18,11 +18,19 @@ variable location2 {
 resource azurerm_resource_group myrg {
     name= var.rgname1
     location  = var.location1
+
+    tags {
+        ritesh = "modi"
+    }
 }
 
 resource azurerm_resource_group myrg1 {
     name= var.rgname2
     location  = var.location2
+
+    tags {
+        ritesh = "modi"
+    }
 }
 
 output myoutput1 {
